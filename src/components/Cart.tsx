@@ -4,8 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BsTrash } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
 
-
-
 const Cart: React.FC = () => {
   const navigate = useNavigate();
   const { cartItems, removeFromCart } = useContext(FoodsContext);
@@ -54,10 +52,6 @@ const Cart: React.FC = () => {
     backgroundColor: 'transparent',
     border: 'none',
   }
-
-  
-
-
   return (
     <>
       <table className="table">
@@ -86,21 +80,14 @@ const Cart: React.FC = () => {
                 </td>
                 <td>
                   <div className="input-group">
-                    <button
-                      className="btn btn-outline-secondary"
-                      type="button"
-                      onClick={() => decreaseQuantity(item.id)}
-                      disabled={quantity === 1}
-                    >
-                      -
+                    <button className="btn btn-outline-secondary" type="button"
+                      onClick={() => decreaseQuantity(item.id)} disabled={quantity === 1}
+                    > -
                     </button>
                     <input type="text" className="form-control" value={quantity}
                       readOnly />
-                    <button
-                      className="btn btn-outline-secondary"
-                      type="button"
-                      onClick={() => increaseQuantity(item.id)}>
-                      +
+                    <button className="btn btn-outline-secondary" type="button"
+                      onClick={() => increaseQuantity(item.id)}>+
                     </button>
                   </div>
                 </td>
@@ -108,9 +95,7 @@ const Cart: React.FC = () => {
                   <b>₹{amount}</b>
                 </td>
                 <td>
-                  <button style={del} onClick={() => removeFromCart(item.id)}>
-                    <BsTrash size={20} />
-                  </button>
+                  <button style={del} onClick={() => removeFromCart(item.id)}><BsTrash size={20} /></button>
                 </td>
               </tr>
             );

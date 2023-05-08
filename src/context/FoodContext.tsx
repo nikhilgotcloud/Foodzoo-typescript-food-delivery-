@@ -60,7 +60,7 @@ const FoodsContextProvider: React.FC<Props> = ({ children }) => {
       setCartItems([...cartItems]);
 
 
-      toast.warn(`${food.name} already exists in the cart, please update quantity`, {
+      toast.warning(`${food.name} already exists in the cart, please update quantity`, {
         position: toast.POSITION.TOP_CENTER,
         autoClose: 2000,
       });

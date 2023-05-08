@@ -86,11 +86,11 @@ const FoodList: React.FC = () => {
                 <div className="container-fluid p-2" style={dv}>
                     <h1 className="navbar-brand ms-4" style={wv}>Food Zoo</h1>
                     {currentUser?.role === 'user' ? (
-            <button type="button" className="btn btn-primary" onClick={handleCartButtonClick} style={{ marginLeft: '75%' }}>
+            <button type="button" className="btn btn-primary" onClick={handleCartButtonClick} >
               Cart
             </button>
           ) : (
-            <button type="button" className="btn btn-primary" onClick={handleModalOpen} style={{ marginLeft: '75%' }}>
+            <button type="button" className="btn btn-primary" onClick={handleModalOpen} >
               Add Food Item
             </button>
           )}
