@@ -1,0 +1,34 @@
+{
+    "foods": [
+      {
+        "id": 1,
+        "name": "Burger",
+        "description": "Crispy aloo patty burger with loaded sauces, chesse slices and fresh farm picked vegetable ",
+        "price": 35,
+        "image": "https://img.freepik.com/free-photo/fresh-hamburger-with-salad-onion_144627-9522.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Pizza",
+        "description": "Crispy aloo patty burger with loaded sauces, chesse slices and fresh farm picked vegetable",
+        "price": 110,
+        "image": "https://img.freepik.com/free-photo/hawaiian-pizza_74190-2500.jpg"
+      },
+      {
+        "id": 3,
+        "name": "French fries",
+        "description": "Crispy aloo patty burger with loaded sauces, chesse slices and fresh farm picked vegetable",
+        "price": 70,
+        "image": "https://img.freepik.com/free-photo/french-fries_1339-1403.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Chicken Roll",
+        "description": "Crispy aloo patty burger with loaded sauces, chesse slices and fresh farm picked vegetable ",
+        "price": 100,
+        "image": "https://img.freepik.com/free-photo/tortilla_144627-20838.jpg"
+      }
+     
+    ]
+  }
+  
