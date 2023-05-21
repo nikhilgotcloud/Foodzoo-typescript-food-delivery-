@@ -1,5 +1,6 @@
 export interface Food {
-  id: number;
+  _id: string;
+  id?: number;
   name: string;
   description: string;
   price: number;
@@ -7,5 +8,20 @@ export interface Food {
   quantity?:number;
  
 }
+
+export interface Carts {
+  _id: string;
+  id?: number;
+  name: string;
+ 
+  price: number;
+  image: string;
+  quantity?:number;
+ 
+}
+
+
+
+
 
 

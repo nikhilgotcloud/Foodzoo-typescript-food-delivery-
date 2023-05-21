@@ -1,8 +1,10 @@
 import React from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from 'react-router-dom';
 
 const Checkout: React.FC = () => {
+  const navigate=useNavigate()
   const urlParams = new URLSearchParams(window.location.search);
   const totalAmount = urlParams.get('totalAmount');
 
@@ -22,6 +24,13 @@ const Checkout: React.FC = () => {
     color: 'white',
     fontFamily:'cursive'
   };
+  const handleLogout = () => {
+    
+    navigate('/');
+    toast.success("You are logged out!!!", {
+      position: toast.POSITION.TOP_CENTER,
+      
+    })};
 
   return (
     <>
@@ -30,6 +39,9 @@ const Checkout: React.FC = () => {
           <h1 className="navbar-brand ms-4" style={wv}>
             Food Zoo
           </h1>
+          <button type="button" className="btn btn-primary"  onClick={handleLogout} >
+              Logout
+            </button>
         </div>
       </nav>
       <div className="container mt-4">
